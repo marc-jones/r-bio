@@ -6,6 +6,10 @@ To run the container interactively in your current directory use:
 
 `docker run -it -v $(pwd):/home dmarcjones/r-bio:0.1`
 
+or if on a system with Singularity:
+
+`singularity run -B $(pwd):/home docker://dmarcjones/r-bio:0.1`
+
 To build and push the container:
 
 ```bash
